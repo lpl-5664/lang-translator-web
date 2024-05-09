@@ -60,6 +60,11 @@ CORS_ALLOWED_ORIGINS = [
     'https://mytranslatorapi.azurewebsites.net'
 ]
 
+CSRF_TRUSTED_ORIGINS = [
+    'http://localhost:3000',
+    'https://mytranslatorapi.azurewebsites.net'
+]
+
 ROOT_URLCONF = 'translator_project.urls'
 
 TEMPLATES = [
