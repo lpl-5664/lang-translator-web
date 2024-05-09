@@ -9,6 +9,8 @@ import ButtonGroup from 'react-bootstrap/ButtonGroup';
 import LanguageDropdown from './LanguageDropdown';
 
 const TranslateComponent = () => {
+  const backendURL = process.env.REACT_APP_BACKEND_URL;
+
   const [sourceLang, setSourceLang] = useState('es');
   const [targetLang, setTargetLang] = useState('en');
   const [inputText, setInputText] = useState('');
