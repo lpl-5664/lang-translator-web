@@ -1,0 +1,234 @@
+.container-fluid {
+    padding: 0%;
+}
+
+.row {
+    margin: 0;
+}
+
+/* Large Screen Controls */
+/* Top Line Controls */
+.dummy-btn {
+    border-bottom-right-radius: 0%;
+    border-bottom-left-radius: 0%;
+    background-color: blueviolet;
+    border: 0;
+}
+
+.dummy-btn:hover,
+.dummy-btn:focus {
+    background-color: blueviolet !important;
+}
+
+#switchBtn {
+    flex: 0 1 auto;
+    text-align: right;
+    border-bottom-left-radius: 0%;
+    border-bottom-right-radius: 0%;
+    border: 0;
+    background-color: blueviolet;
+}
+
+/* Language dropdown controls */
+#dropdown_src_lang {
+    text-align: left;
+    border-bottom-left-radius: 0%;
+    border-bottom-right-radius: 0%;
+    border: 0;
+    background-color: blueviolet;
+}
+
+#dropdown_tgt_lang {
+    text-align: left;
+    border: 0;
+    border-bottom-left-radius: 0%;
+    border-bottom-right-radius: 0%;
+    background-color: blueviolet;
+}
+
+
+
+/* Text Controls */
+.form-control {
+    border-radius: 0%;
+    resize: none;
+}
+
+.form-control:focus {
+    border: 1px solid #ced4da;
+    box-shadow: none;
+}
+
+
+
+/* Bottom Line Controls */
+#translateBtn {
+    flex: 0 1 auto;
+    border-top-right-radius: 0%;
+    border-top-left-radius: 0%;
+    text-align: right;
+    background-color: white;
+    color: blueviolet;
+    border: 1px solid #ced4da;
+    border-top: 0;
+    border-left: 0;
+}
+
+#cstmToggleSW:checked,
+#cstmToggleSW_md:checked,
+#cstmToggleSW_sm:checked {
+    background-color: blueviolet;
+    border-color: blueviolet;
+}
+
+.toggleSW {
+    background-color: white;
+    border-top-left-radius: 0%;
+    border-top-right-radius: 0%;
+    border: 1px solid #ced4da;
+    border-top: 0;
+}
+
+.toggleSW:hover,
+.toggleSW:focus {
+    background-color: white !important;
+}
+
+.bottom-dummy-btn {
+    border: 1px solid #ced4da;
+    border-top-right-radius: 0%;
+    border-top-left-radius: 0%;
+    background-color: white;
+    border-top: 0;
+    border-right: 0;
+}
+
+.bottom-dummy-btn:hover,
+.bottom-dummy-btn:focus {
+    background-color: white !important;
+}
+
+
+
+/* Medium Screen Controls */
+.cstm-btn-group {
+    position: relative;
+}
+
+#dropdown_src_lang_md, 
+#dropdown_tgt_lang_md {
+    background-color: blueviolet;
+    border: 0;
+    border-bottom-left-radius: 0%;
+    border-bottom-right-radius: 0%;
+}
+
+.float-btn {
+    position: absolute;
+    top: 15%;
+    border-radius: 50%;
+    height: 30px;
+    width: 60px;
+    padding: 0;
+    z-index: 1;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.5);
+}
+
+#translateBtn_md {
+    flex: 0 1 auto;
+    border-top-right-radius: 0%;
+    border-top-left-radius: 0%;
+    text-align: right;
+    background-color: white;
+    color: blueviolet;
+    border: 1px solid #ced4da;
+    border-top: 0;
+    border-left: 0;
+}
+
+#translationDisplay_md {
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+
+/* Small Screen Controls */
+.ctn-sm {
+    height: 60%;
+}
+
+.cstm-btn-group-sm {
+    position: relative;
+}
+
+#dropdown_src_lang_sm, 
+#dropdown_tgt_lang_sm {
+    background-color: blueviolet;
+    border: 0;
+    border-radius: 0%;
+}
+
+.float-btn-sm {
+    position: absolute;
+    top: 13%;
+    border-radius: 50%;
+    height: 25px;
+    width: 60px;
+    padding: 0;
+    z-index: 1;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.5);
+}
+
+#textInput_sm {
+    border-bottom: 0;
+}
+
+.translateToolBar {
+    position: relative;
+    height: 45px;
+}
+
+.bottom-dummy-btn-sm {
+    border: 1px solid #ced4da;
+    border-radius: 0%;
+    background-color: white;
+    border-top: 0;
+}
+
+.bottom-dummy-btn-sm:hover,
+.bottom-dummy-btn-sm:focus {
+    background-color: white !important;
+}
+
+#translateBtn_sm {
+    position: absolute;
+    top: 10%;
+    right: 2%;
+    color: white;
+    background-color: blueviolet;
+    border: 0;
+    border-radius: 1rem;
+    padding: 5px;
+    z-index: 1;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.5);
+}
+
+#textInput_sm {
+    border-bottom-left-radius: 0%;
+    border-bottom-right-radius: 0%;
+}
+
+#translationDisplay_sm {
+    border-bottom: 0;
+}
+
+.toggleSW-sm {
+    background-color: white;
+    border-radius: 0%;
+    border: 1px solid #ced4da;
+    border-top: 0;
+}
+
+.toggleSW-sm:hover,
+.toggleSW-sm:focus {
+    background-color: white !important;
+}
