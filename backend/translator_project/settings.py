@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-9jck&i(iwna(r8^f&p(!s&k8dz$m2ia^)jg3g9a9&xr8h3*t%z
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['mytranslatorapi.azurewebsites.net', '127.0.0.1']
+ALLOWED_HOSTS = ['mytranslatorapi.azurewebsites.net', 'localhost', '127.0.0.1']
 
 
 # Application definition

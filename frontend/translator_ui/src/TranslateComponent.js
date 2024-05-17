@@ -9,7 +9,10 @@ import ButtonGroup from 'react-bootstrap/ButtonGroup';
 import LanguageDropdown from './LanguageDropdown';
 
 const TranslateComponent = () => {
-  const backendURL = process.env.REACT_APP_BACKEND_URL;
+  
+  const backendURL = (process.env.NODE_ENV === 'production' ? 
+        process.env.REACT_APP_BACKEND_URL_PRODUCTION : 
+        process.env.REACT_APP_BACKEND_URL_LOCAL);
 
   const [sourceLang, setSourceLang] = useState('es');
   const [targetLang, setTargetLang] = useState('en');
@@ -18,7 +21,7 @@ const TranslateComponent = () => {
   const [languages, setLanguages] = useState([]);
 
   useEffect(() => {
-    axios.get('http://127.0.0.1:8000/languages/')
+    axios.get(`${backendURL}/languages/`)
         .then(response => {
             setLanguages(response.data);
         })
@@ -28,7 +31,7 @@ const TranslateComponent = () => {
   }, []);
 
   const handleTranslate = () => {
-    axios.post('http://127.0.0.1:8000/translator_app/', {
+    axios.post(`${backendURL}/translator_app/`, {
         source_language: sourceLang,
         target_language: targetLang,
         input_text: inputText
