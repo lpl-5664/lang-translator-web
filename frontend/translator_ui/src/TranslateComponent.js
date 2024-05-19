@@ -10,9 +10,8 @@ import LanguageDropdown from './LanguageDropdown';
 
 const TranslateComponent = () => {
   
-  const backendURL = (process.env.NODE_ENV === 'production' ? 
-        process.env.REACT_APP_BACKEND_URL_PRODUCTION : 
-        process.env.REACT_APP_BACKEND_URL_LOCAL);
+  const backendURL = process.env.REACT_APP_BACKEND_URL_LOCAL;
+  console.log("URL: ", backendURL);
 
   const [sourceLang, setSourceLang] = useState('es');
   const [targetLang, setTargetLang] = useState('en');
@@ -28,7 +27,7 @@ const TranslateComponent = () => {
         .catch(error => {
             console.error('Error fetching languages: ', error)
         });
-  }, []);
+  }, [backendURL]);
 
   const handleTranslate = () => {
     axios.post(`${backendURL}/translator_app/`, {
