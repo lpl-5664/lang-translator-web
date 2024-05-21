@@ -10,7 +10,7 @@ import LanguageDropdown from './LanguageDropdown';
 
 const TranslateComponent = () => {
   
-  const backendURL = process.env.REACT_APP_BACKEND_URL_LOCAL;
+  const backendURL = process.env.REACT_APP_BACKEND_URL;
   console.log("URL: ", backendURL);
 
   const [sourceLang, setSourceLang] = useState('es');
